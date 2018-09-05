@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>work</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<script> 
+  //题目一：回文数
+  function palindromicNumber (num) {
+    var result = 0;
+    const numToString = num.toString(),
+          length = numToString.length,
+          lastIndex = Math.floor(length/2);
+    for (let i = 0; i <= lastIndex-1; i++) {
+      if (numToString.charAt(i) == numToString.charAt(length - (i+1))) {
+        result += 1;
+      }
+    }
+    if (result == lastIndex) {
+      console.log(num + ' is a palindromic number')
+    }else {
+      console.log(num + ' is not a palindromic number')
+    }
+  }
+
+  //题目二
+  function deleteDuplicates (arr) {
+    const newArr = new Set(arr),
+          length = newArr.size;
+    return length
+  }
+</script>
+
+</body>
